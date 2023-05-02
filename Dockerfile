@@ -10,7 +10,7 @@ WORKDIR /app
 COPY . /app 
 
 #Expose server at port ( accessible outside of container)
-EXPOSE 3000 
+EXPOSE 8080 
 
 #Start app 
 CMD ["node", "server.js"]
