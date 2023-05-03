@@ -33,7 +33,7 @@ function handler(req, res){
 </head> \
 <body> \
   <form name="myForm" action="" onsubmit="return ajax();"method="post">\
-      <input type="text" name="A"> + \
+      <input type="text" name="A">  \
       <span id="result"></span> \
       <br> \
       <input type="submit" value="Submit"> \
@@ -118,5 +118,11 @@ http.createServer(handler).listen(8080, function(err){
     console.log('Error starting http server');
   } else {
     console.log("Server running at http://127.0.0.1:8000/ or http://localhost:8000/");
+    let i=0;
+        while(true){
+            i=i+i*i
+            console.log(i)
+          }
+
   };
 });
